@@ -1,0 +1,56 @@
+
+
+HTTP Method
+GET
+
+Endpoint
+/rides/get-fare
+
+Authentication
+Requires a valid JWT token provided in the Authorization header:
+
+Request Parameters
+
+pickup (string, required): The pickup address. Must be at least 3 characters long.
+destination (string, required): The destination address. Must be at least 3 characters long.
+Example Request
+
+Example Response
+
+Note: The response object contains fare estimates for each vehicle type calculated using predefined base fares, per kilometer, and per minute rates.
+
+Error Response
+
+400 Bad Request
+If the pickup or destination parameters are missing or invalid, e.g.:
+500 Internal Server Error
+If an error occurs while calculating the fare, the response will include:
+Implementation can be found in ride.route.js and rides.controller.js.
+
+
+HTTP Method
+GET
+
+Endpoint
+/rides/get-fare
+
+Authentication
+Requires a valid JWT token provided in the Authorization header:
+
+Request Parameters
+
+pickup (string, required): The pickup address. Must be at least 3 characters long.
+destination (string, required): The destination address. Must be at least 3 characters long.
+Example Request
+
+Example Response
+
+Note: The response object contains fare estimates for each vehicle type calculated using predefined base fares, per kilometer, and per minute rates.
+
+Error Response
+
+400 Bad Request
+If the pickup or destination parameters are missing or invalid, e.g.:
+500 Internal Server Error
+If an error occurs while calculating the fare, the response will include:
+Implementation can be found in ride.route.js and rides.controller.js.
